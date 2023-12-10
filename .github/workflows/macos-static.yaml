@@ -108,7 +108,7 @@ jobs:
             --cmake_extra_defines onnxruntime_BUILD_UNIT_TESTS=OFF \
             --cmake_extra_defines onnxruntime_BUILD_SHARED_LIB=OFF \
             --cmake_extra_defines CMAKE_INSTALL_PREFIX=$build_dir/install/ \
-            --include_ops_by_config $GITHUB_WORKSPACE/../model.required_operators_and_types.config \
+            --include_ops_by_config ./model.required_operators_and_types.config \
             --enable_reduced_operator_type_support \
             --osx_arch $arch \
             --target install \
