@@ -59,6 +59,7 @@ jobs:
         shell: bash
         run: |
           python3 -m pip install cmake
+          python3 -m pip install flatbuffers
           cmake --version
           brew install tree
           tree --version
