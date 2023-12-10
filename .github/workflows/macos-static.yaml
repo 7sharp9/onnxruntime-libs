@@ -99,7 +99,7 @@ jobs:
           build_dir=./build-macos/$arch
 
           echo "The root of the repository is ${GITHUB_WORKSPACE}"
-          ls "${GITHUB_WORKSPACE}"
+          ls "${GITHUB_WORKSPACE}"../
 
           python3 ./tools/ci_build/build.py \
             --build_dir $build_dir \
