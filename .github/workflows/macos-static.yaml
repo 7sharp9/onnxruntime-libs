@@ -95,7 +95,7 @@ jobs:
         if: steps.cache-build-result.outputs.cache-hit != 'true'
         shell: bash
         run: |
-          ONNX_CONFIG="${1:-./model.required_operators_and_types.config}"
+          ONNX_CONFIG="${1:-$GITHUB_WORKSPACE/model.required_operators_and_types.config}"
           arch=${{ matrix.arch }}
           build_dir=./build-macos/$arch
 
